@@ -1,0 +1,7 @@
+<section id="cardex" class="block">
+    <h2 class="section-title"> {{::params | titleTranslate}}</h2>
+
+    <div ng-if="!isDataPresent()">
+        <div class="placeholder-text">{{::"DASHBOARD_CARDEX_NO_ENTRIES_KEY" | translate}}</div>
+    </div>
+</section>
