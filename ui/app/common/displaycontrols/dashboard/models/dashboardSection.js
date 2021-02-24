@@ -6,6 +6,7 @@
     var CLINICAL_DISPLAY_CONTROL_URL = "../clinical/dashboard/views/dashboardSections/SECTION_NAME.html";
     var commonDisplayControlNames = [
         "admissionDetails",
+        "cardex",
         "bacteriologyResultsControl",
         "chronicTreatmentChart",
         "custom",
