@@ -55,6 +55,7 @@ angular.module('adt').config(['$stateProvider', '$httpProvider', '$urlRouterProv
                     templateUrl: 'views/headerAdt.html',
                     controller: function ($scope) {
                         $scope.showClinicalDashboardLink = true;
+                        $scope.showCardexLink = true;
                     }
                 },
                 'content': {
@@ -75,6 +76,10 @@ angular.module('adt').config(['$stateProvider', '$httpProvider', '$urlRouterProv
             url: '/visit/:visitUuid',
             abstract: true,
             template: '<ui-view/>'
+        })
+        .state('patient.adt.cardex', {
+            url: '/cardex',
+            templateUrl: 'views/cardex.html',
         })
         .state('patient.adt.action', {
             url: '/:action',
