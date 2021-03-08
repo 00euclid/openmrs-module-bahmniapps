@@ -75,7 +75,17 @@ angular.module('adt').config(['$stateProvider', '$httpProvider', '$urlRouterProv
         .state('patient.adt', {
             url: '/visit/:visitUuid',
             abstract: true,
-            template: '<ui-view/>'
+            views: {
+                '': {
+                    template: '<ui-view/>'
+                },
+                'cardex-link': {
+                    templateUrl: 'views/cardexLink.html',
+                    controller: function($stateParams, $scope) {
+                        $scope.visitUuid = $stateParams.visitUuid;
+                    }
+                }
+            }
         })
         .state('patient.adt.cardex', {
             url: '/cardex',
