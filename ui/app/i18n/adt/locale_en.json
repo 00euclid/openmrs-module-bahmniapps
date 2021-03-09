@@ -63,5 +63,9 @@
     "BED_LABEL": "Bed",
     "ASSIGN_BED_LABEL": "Assign",
     "TRANSFER_BED_LABEL": "Transfer",
-    "EMPTY_WARD_MESSAGE": "There are no patients in this ward."
+    "EMPTY_WARD_MESSAGE": "There are no patients in this ward.",
+
+    "CARDEX_TITLE": "Cardex",
+    "CARDEX_LABEL_NEW_ENTRY": "NEW CARDEX ENTRY",
+    "CARDEX_LABEL_DRUG_DETAILS": "Additional Information"
 }

@@ -89,7 +89,9 @@ angular.module('adt').config(['$stateProvider', '$httpProvider', '$urlRouterProv
         })
         .state('patient.adt.cardex', {
             url: '/cardex',
-            templateUrl: 'views/cardex.html',
+            views: {
+                '': {templateUrl: 'views/cardex.html', controller: "CardexController"}
+            }
         })
         .state('patient.adt.action', {
             url: '/:action',

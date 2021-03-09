@@ -2,10 +2,10 @@
 
 angular.module('bahmni.adt')
     .controller('CardexController', [
-        '$scope', '$rootScope', '$stateParams', 'spinner', 'wardService', 'backlinkService',
-        ($scope, $rootScope, $stateParams, spinner, wardService, backlinkService) => {
+        '$scope', '$rootScope', '$stateParams', 'spinner',
+        ($scope, $rootScope, $stateParams, spinner) => {
             const init = () => {
-                console.log("Hello");
+                
             };
 
             init();

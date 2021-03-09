@@ -29,5 +29,9 @@
     "CONDITION_LIST_CONDITIONS_INACTIVE": "Condiciones Inactivas",
     "CONDITION_LIST_CREATED_BY": "por",
     "CONDITION_LIST_ACTIVE_SINCE": "condición de",
-    "CONDITION_LIST_NO_CONDITIONS": "Sin Condiciones disponibles"
+    "CONDITION_LIST_NO_CONDITIONS": "Sin Condiciones disponibles",
+
+    "CARDEX_TITLE": "Cardex",
+    "CARDEX_LABEL_NEW_ENTRY": "ENTRADA NUEVA CARDEX",
+    "CARDEX_LABEL_DRUG_DETAILS": "Información Adicional"
 }

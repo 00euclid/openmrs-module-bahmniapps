@@ -1,0 +1,53 @@
+.box-container-cardex {
+    padding: 15px !important;
+
+    input[type=number] {
+
+        &:not(#frequency) {
+            min-width: 150px;
+        }
+
+        &#frequency {
+            max-width: 50px;
+        }
+    }
+
+    section.form-field-inline article {
+        display: inline;
+        float: left;
+        width: 47.91667%;
+        margin: 0 1.04167%;
+    }
+
+    .cardex-legend {
+        margin: 15px 0 15px 25px;
+        width: auto;
+        position: relative;
+    
+        &-header {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    
+        &::before {
+            content: "";
+            border-top: 1px #ccc solid;
+            position: absolute;
+            top: 14px;
+            width: 96%;
+        }
+    
+        &-content {
+            display: inline-block;
+            width: auto;
+            margin-bottom: 0;
+            padding: 5px 6px;
+            margin-left: 25px;
+            position: relative;
+            background: #eee;
+            line-height: 16px;
+            border-radius: 3px;
+            border: 1px solid #ccc;
+        }
+    }
+}
