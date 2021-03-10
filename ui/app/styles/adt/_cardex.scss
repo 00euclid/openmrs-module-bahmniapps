@@ -1,15 +1,34 @@
 .box-container-cardex {
-    padding: 15px !important;
+    padding: 15px 15px 30px 15px !important;
+    margin-bottom: 20px !important;
 
     input[type=number] {
 
         &:not(#frequency) {
-            min-width: 150px;
+            min-width: 175px;
         }
 
         &#frequency {
             max-width: 50px;
         }
+    }
+
+    textarea {
+        resize: none;
+    }
+
+    .field {
+        &-space-after {
+            margin-right: 5px;
+        }
+        &-space-before {
+            margin-left: 5px;
+        }
+    }
+
+    select#frequency-time {
+        min-width: 120px !important;
+        max-width: 120px !important;
     }
 
     section.form-field-inline article {

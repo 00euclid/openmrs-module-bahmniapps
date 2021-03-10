@@ -33,5 +33,7 @@
 
     "CARDEX_TITLE": "Cardex",
     "CARDEX_LABEL_NEW_ENTRY": "NOUVELLE ENTRÉE CARDEX",
-    "CARDEX_LABEL_DRUG_DETAILS": "Information Additionnelle"
+    "CARDEX_LABEL_DRUG_DETAILS": "Information Détaillée",
+    "CARDEX_LABEL_ADD_DETAILS": "Information Additionnelle",
+    "CARDEX_LABEL_ADD_NOTES": "Notes complémentaires"
 }

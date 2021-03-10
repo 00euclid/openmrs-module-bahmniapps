@@ -13,7 +13,7 @@
                             <label for="drug-selection">Medication Used</label>
                         </div>
                         <div class="field-value">
-                            <select name="drug-selection" id="drug-selection" ng-model="drug.selection">
+                            <select name="drug-selection" id="drug-selection" ng-model="drug.selection" focus-me="true">
                                 <option label="Moxifloxacin Eye Drop IP" value="val">Moxifloxacin Eye Drop IP</option>
                                 <option label="Fluoromtholone Eye Drop IP" value="val">Fluoromtholone Eye Drop IP</option>
                                 <option label="Amoxycilin Tablets" value="val">Amoxycilin Tablets</option>
@@ -26,32 +26,33 @@
                         <strong>{{::'CARDEX_LABEL_DRUG_DETAILS' | translate}}</strong>
                     </span>
                 </legend>
-                <section class="form-field-inline clearfix form-field-drug-details">
-                    <article class="form-field">
-                        <div class="field-attribute">
-                            <label for="strength">Strength</label>
-                        </div>
-                        <div class="field-value">
-                            <span>
-                                <input  id="strength" type="number" name="strength" ng-model="drug.strength" 
-                                       focus-me="true" placeholder="Drug Strength (%)" />
-                            </span>
-                        </div>
-                    </article>
-                    <article class="form-field">
-                        <div class="field-attribute">
-                            <label for="dosage">Dosage</label>
-                        </div>
-                        <div class="field-value">
-                            <span>
-                                <input  id="dosage" type="number" name="dosage" ng-model="drug.dosage" 
-                                       focus-me="true" placeholder="Drug Dosage (mg)" />
-                            </span>
-                        </div>
-                    </article>
-                </section>
+                <section>
+                    <section class="form-field-inline clearfix form-field-drug-details">
+                        <article class="form-field">
+                            <div class="field-attribute">
+                                <label for="strength">Strength</label>
+                            </div>
+                            <div class="field-value">
+                                <span>
+                                    <input  id="strength" type="number" name="strength" ng-model="drug.strength" 
+                                            placeholder="Drug Strength (%)" />
+                                </span>
+                            </div>
+                        </article>
+                        <article class="form-field">
+                            <div class="field-attribute">
+                                <label for="dosage">Dosage</label>
+                            </div>
+                            <div class="field-value">
+                                <span>
+                                    <input  id="dosage" type="number" name="dosage" ng-model="drug.dosage" 
+                                            placeholder="Drug Dosage (mg)" />
+                                </span>
+                            </div>
+                        </article>
+                    </section>
                     <section class="form-field-inline clearfix">
-                        <!-- <article class="form-field">
+                        <article class="form-field">
                             <div class="field-attribute">
                                 <label for="drug-route">Method of Administration</label>
                             </div>
@@ -64,24 +65,6 @@
                                     <option value="val" label="Intrathecal">Intrathecal</option>
                                 </select>
                             </div>
-                        </article> -->
-                        <article class="form-field">
-                            <div class="field-attribute">
-                                <label for="frequency">Frequency</label>
-                            </div>
-                            <div class="field-value">
-                                <span>
-                                    <input  id="frequency" type="number" name="frequency" ng-model="drug.frequecy" 
-                                           focus-me="true" />
-                                </span>
-                                <span>
-                                    <select name="frequency-time" id="frequency-time" ng-model="drug.frequencyTime">
-                                        <option label="Per Day" value="val">Per Day</option>
-                                        <option label="Per Week" value="val">Per Week</option>
-                                        <option label="Per Month" value="val">Per Month</option>
-                                    </select>
-                                </span>
-                            </div>
                         </article>
                         <article class="form-field">
                             <div class="field-attribute">
@@ -90,12 +73,109 @@
                             <div class="field-value">
                                 <span>
                                     <input  id="duration" type="number" name="duration" ng-model="drug.duration" 
-                                           focus-me="true" placeholder="Admin. Duration (sec)" />
+                                             placeholder="Drug Duration (sec)" />
+                                </span>
+                            </div>
+                        </article>
+                    </section>
+                    <section class="form-field-inline clearfix">
+                        <article class="form-field">
+                            <div class="field-attribute">
+                                <label for="frequency">Frequency</label>
+                            </div>
+                            <div class="field-value field-space-after">
+                                <input  id="frequency" type="number" name="frequency" ng-model="drug.frequecy" 
+                                         />
+                            </div>
+                            <div class="field-value">
+                                    <select name="frequency-time" id="frequency-time" ng-model="drug.frequencyTime">
+                                        <option label="Per Day" value="val">Per Day</option>
+                                        <option label="Per Week" value="val">Per Week</option>
+                                        <option label="Per Month" value="val">Per Month</option>
+                                    </select>
                                 </span>
                             </div>
                         </article>
                     </section>
                 </section>
+                <legend class="cardex-legend">
+                    <span class="cardex-legend-content">
+                        <strong>{{::'CARDEX_LABEL_ADD_DETAILS' | translate}}</strong>
+                    </span>
+                </legend>
+                <section>
+                    <section class="form-field-inline clearfix form-field-drug-details">
+                        <article class="form-field">
+                            <div class="field-attribute">
+                                <label for="perscription-date">Date of Perscription</label>
+                            </div>
+                            <div class="field-value">
+                                <span>
+                                    <input  id="perscription-date" type="date" name="perscription-date" ng-model="drug.perscription" 
+                                            />
+                                </span>
+                            </div>
+                        </article>
+                        <article class="form-field">
+                            <div class="field-attribute">
+                                <label for="expiry-date">Date of Discontinuation</label>
+                            </div>
+                            <div class="field-value">
+                                <span>
+                                    <input  id="expiry-date" type="date" name="expiry-date" ng-model="drug.expiration" 
+                                            />
+                                </span>
+                            </div>
+                        </article>
+                    </section>
+                    <section class="form-field-inline clearfix form-field-drug-details">
+                        <article class="form-field">
+                            <div class="field-attribute">
+                                <label for="perscribed-by">Prescribed By</label>
+                            </div>
+                            <div class="field-value">
+                                <span>
+                                    <select name="perscribed-by" id="perscribed-by" ng-model="drug.perscribedBy">
+                                        <option label="Dr. John Doe" value="val">Dr. John Doe</option>
+                                        <option label="Dr. Jane Doe" value="val">Dr. Jane Doe</option>
+                                    </select>
+                                </span>
+                            </div>
+                        </article>
+                    </section>
+                </section>
+                <legend class="cardex-legend">
+                    <span class="cardex-legend-content">
+                        <strong>{{::'CARDEX_LABEL_ADD_NOTES' | translate}}</strong>
+                    </span>
+                </legend>
+                <section>
+                    <section class="form-field clearfix form-field-drug-details">
+                        <article class="form-field">
+                            <div class="field-attribute">
+                                <label for="instructions">Administration Instructions</label>
+                            </div>
+                            <div class="field-value">
+                                <span>
+                                    <textarea  id="instructions" type="date" name="instructions" ng-model="drug.instructions" resizeable></textarea>
+                                </span>
+                            </div>
+                        </article>
+                        <article class="form-field">
+                            <div class="field-attribute">
+                                <label for="notes">Patient Notes</label>
+                            </div>
+                            <div class="field-value">
+                                <span>
+                                    <textarea  id="notes" type="date" name="notes" ng-model="drug.notes"></textarea>
+                                </span>
+                            </div>
+                        </article>
+                    </section>
+                </section>
+            </div>
+            <div class="clearfix">
+                <button class="right submit-btn" type="submit">Save</button>
             </div>
         </form>
         <br/>

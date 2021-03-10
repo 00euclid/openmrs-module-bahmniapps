@@ -67,5 +67,8 @@
 
     "CARDEX_TITLE": "Cardex",
     "CARDEX_LABEL_NEW_ENTRY": "NEW CARDEX ENTRY",
-    "CARDEX_LABEL_DRUG_DETAILS": "Additional Information"
+    "CARDEX_LABEL_DRUG_DETAILS": "Detailed Information",
+    "CARDEX_LABEL_ADD_DETAILS": "Perscription Information",
+    "CARDEX_LABEL_ADD_NOTES": "Additional Notes"
+
 }

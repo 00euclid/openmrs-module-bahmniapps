@@ -5,7 +5,7 @@ angular.module('bahmni.adt')
         '$scope', '$rootScope', '$stateParams', 'spinner',
         ($scope, $rootScope, $stateParams, spinner) => {
             const init = () => {
-                
+                console.log("Success!");
             };
 
             init();
