@@ -2,10 +2,7 @@
 
 angular.module('bahmni.adt')
     .controller('CardexController', [
-        '$scope', '$rootScope', '$stateParams', 'spinner', 'drugService', 'contextChangeHandler', 
-        '$q', 'ngDialog', '$window', '$timeout', '$translate',
-        ($scope, $rootScope, $stateParams, spinner, drugService, contextChangeHandler, 
-        $q, ngDialog, $window, $timeout, $translate) => {
+        '$scope', 'drugService', ($scope, drugService) => {
             
             const init = () => {
                 console.log("Success!");
