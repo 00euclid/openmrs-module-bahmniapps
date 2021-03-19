@@ -7,17 +7,13 @@
                         <strong>{{::'CARDEX_LABEL_NEW_ENTRY' | translate}}</strong>
                     </span>
                 </legend>
-                <section class="form-field form-field-drug-selection">
+                <section class="form-field form-field-drug-name">
                     <article class="form-field">
                         <div class="field-attribute">
-                            <label for="drug-selection">Medication Used</label>
+                            <label for="drug-name">Medication Used</label>
                         </div>
                         <div class="field-value">
-                            <select name="drug-selection" id="drug-selection" ng-model="drug.selection" focus-me="true">
-                                <option label="Moxifloxacin Eye Drop IP" value="val">Moxifloxacin Eye Drop IP</option>
-                                <option label="Fluoromtholone Eye Drop IP" value="val">Fluoromtholone Eye Drop IP</option>
-                                <option label="Amoxycilin Tablets" value="val">Amoxycilin Tablets</option>
-                            </select>
+                            <input type="text" name="drug-name" id="drug-name" ng-model="drug.name" ng-change="onChange(drug.name)" />
                         </div>
                     </article>
                 </section>

@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('bahmni.clinical')
+angular.module('bahmni.`clinical`')
     .controller('AddTreatmentController', ['$scope', '$rootScope', 'contextChangeHandler', 'treatmentConfig', 'drugService',
         '$timeout', 'clinicalAppConfigService', 'ngDialog', '$window', 'messagingService', 'appService', 'activeDrugOrders',
         'orderSetService', '$q', 'locationService', 'spinner', '$translate',
