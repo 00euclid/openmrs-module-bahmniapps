@@ -8,12 +8,16 @@
                     </span>
                 </legend>
                 <section class="form-field form-field-drug-name">
-                    <article class="form-field">
+                    <article class="form-field" style="position: relative;">
                         <div class="field-attribute">
                             <label for="drug-name">Medication Used</label>
                         </div>
                         <div class="field-value">
                             <input type="text" name="drug-name" id="drug-name" ng-model="drug.name" ng-change="onChange(drug.name)" />
+                        </div>
+                        <div class="cardex-autofill hidden">
+                            <ul id="search-result">
+                            </ul>
                         </div>
                     </article>
                 </section>

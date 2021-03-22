@@ -38,6 +38,38 @@
         margin: 0 1.04167%;
     }
 
+    .cardex-autofill {
+        background-color: #fff;
+        float: none;
+        padding: 5px 0;
+        position: absolute;
+        top: 40px;
+        z-index: 9999;
+        left: 221px;
+        border: #bbb 1px solid;
+        max-height: 200px;
+        overflow-y: auto;
+
+        ul {
+            list-style-type: none;
+
+            li {
+                line-height: 1.5em;
+                padding: 3px 10px;
+
+                &:hover {
+                    background-color: $bahmniSecondaryColor;
+                    color: white;
+                    cursor: pointer;
+                }
+            }
+
+            &.hidden {
+                display: none;
+            }
+        }
+    }
+
     .cardex-legend {
         margin: 15px 0 15px 25px;
         width: auto;
