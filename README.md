@@ -34,3 +34,9 @@ Please visit https://bahmni.atlassian.net/wiki/display/BAH/Working+on+Bahmni+Ope
     |-- .jshint.rc
     |-- package.json
 </pre>
+
+# Concepts Added
+- Date of Prescription
+- Date of Discontinuation
+- Adiministration Notes
+- Patient Notes
