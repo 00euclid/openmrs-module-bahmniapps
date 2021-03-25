@@ -88,7 +88,9 @@
                                          />
                             </div>
                             <div class="field-value">
-                                    <select name="frequency-time" id="frequency-time" ng-model="drug.frequencyTime">
+                                    <select name="frequency-time" id="frequency-time" 
+                                    ng-options="item.label for item in doseFractions track by item.value" \
+                                    ng-model="drug.frequencyTime">
                                         <option label="Per Day" value="val">Per Day</option>
                                         <option label="Per Week" value="val">Per Week</option>
                                         <option label="Per Month" value="val">Per Month</option>

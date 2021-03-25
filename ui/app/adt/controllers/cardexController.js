@@ -2,7 +2,7 @@
 
 angular.module('bahmni.adt')
     .controller('CardexController', [
-        '$scope', '$compile', 'drugService', ($scope, $compile, drugService) => {
+        '$scope', '$compile', 'drugService', 'treatmentConfig', ($scope, $compile, drugService, treatmentConfig) => {
 
 
             /**
@@ -94,6 +94,8 @@ angular.module('bahmni.adt')
                 }
             };
 
+            $scope.doseFractions = treatmentConfig.getDoseFractions();
+
 
             /**
              * Function: onSelect
@@ -106,7 +108,7 @@ angular.module('bahmni.adt')
              */
             $scope.onSelect = uuid => {
                 let selectedDrug = searchedDrugs.find(drug => drug.uuid === uuid);
-                console.log(selectedDrug);
+                // Logic to autofill the form
             };
 
             /**
@@ -116,7 +118,7 @@ angular.module('bahmni.adt')
              * Might come in handy later on.
              */
             const init = () => {
-                console.log("++++ Cardex Module! ++++");
+                $scope.treatmentConfig = treatmentConfig;
             };
 
             init();
