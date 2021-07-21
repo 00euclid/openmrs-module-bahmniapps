@@ -122,6 +122,7 @@ angular.module('bahmni.common.appFramework')
                 loadConfig(baseUrl + appDescriptor.contextPath + "/" + pageName + ".json").then(
                 function (baseResult) {
                     if (baseResult.data.shouldOverRideConfig) {
+                        console.log(customUrl + appDescriptor.contextPath + "/" + pageName + ".json");
                         loadConfig(customUrl + appDescriptor.contextPath + "/" + pageName + ".json").then(
                             function (customResult) {
                                 setDefaultPageConfig(pageName, baseResult.data, customResult.data);
@@ -145,6 +146,7 @@ angular.module('bahmni.common.appFramework')
                 });
                 return deferrable.promise;
             };
+            
             this.getAppDescriptor = function () {
                 return appDescriptor;
             };

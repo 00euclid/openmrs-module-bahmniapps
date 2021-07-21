@@ -2,7 +2,7 @@
 
 angular.module('bahmni.adt')
     .controller('CardexController', [
-        '$scope', '$compile', 'drugService', 'treatmentConfig', ($scope, $compile, drugService, treatmentConfig) => {
+        '$scope', '$rootScope', '$compile', 'treatmentConfig', 'drugService', 'appService', ($scope, $rootScope, $compile, treatmentConfig, drugService, appService) => {
 
 
             /**
@@ -12,6 +12,8 @@ angular.module('bahmni.adt')
              */
             let searchedDrugs = [];
             let searchResultHolder = $("ul#search-result");
+
+            console.log(treatmentConfig());
 
             /**
              * Promise: getDrugs
@@ -93,8 +95,6 @@ angular.module('bahmni.adt')
                     searchResultHolder.parent().addClass("hidden");
                 }
             };
-
-            $scope.doseFractions = treatmentConfig.getDoseFractions();
 
 
             /**

@@ -108,6 +108,7 @@ angular.module('bahmni.adt').factory('treatmentConfig',
                 };
 
                 var setDrugOrderOptions = function (medicationTabConfig, tabConfigName) {
+                    
                     var medicationJson = appService.getAppDescriptor().getConfigForPage('medication') || {};
                     var commonConfig = medicationJson.commonConfig || {};
                     var allTabConfigs = medicationJson.tabConfig || {};
